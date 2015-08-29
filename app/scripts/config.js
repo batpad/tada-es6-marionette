@@ -1,20 +1,18 @@
 System.config({
-  "baseURL": "/scripts/",
-  "transpiler": "babel",
-  "babelOptions": {
+  baseURL: "/scripts/",
+  defaultJSExtensions: true,
+  transpiler: "babel",
+  babelOptions: {
     "optional": [
       "runtime"
     ]
   },
-  "paths": {
-    "*": "*.js",
-    "github:*": "../../jspm_packages/github/*.js",
-    "npm:*": "../../jspm_packages/npm/*.js"
-  }
-});
+  paths: {
+    "github:*": "../../jspm_packages/github/*",
+    "npm:*": "../../jspm_packages/npm/*"
+  },
 
-System.config({
-  "map": {
+  map: {
     "babel": "npm:babel-core@5.6.20",
     "babel-runtime": "npm:babel-runtime@5.6.20",
     "backbone": "npm:backbone@1.2.1",
@@ -46,4 +44,3 @@ System.config({
     }
   }
 });
-
