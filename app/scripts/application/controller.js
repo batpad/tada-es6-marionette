@@ -1,5 +1,4 @@
-import HomeView from 'views/home'
-//import App from 'app'
+//import HomeView from 'views/home'
 
 const controller = {
   'home': () => {
